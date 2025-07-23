@@ -7,7 +7,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:8000/moderate", {
+    const res = await fetch("https://shandyserverai.onrender.com/moderate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
